@@ -10,5 +10,10 @@ public class TurnACOffCommand  implements ICommand{
     public void execute(){
         ac.turnOffAc();
     }
+
+    @Override
+    public void undo(){
+        ac.turnOnAc();
+    }
 }
 

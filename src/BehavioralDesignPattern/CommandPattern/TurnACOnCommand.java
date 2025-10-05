@@ -10,4 +10,9 @@ public class TurnACOnCommand implements ICommand{
     public void execute(){
         ac.turnOnAc();
     }
+
+    @Override
+    public void undo(){
+        ac.turnOffAc();
+    }
 }
