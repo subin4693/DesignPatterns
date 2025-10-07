@@ -12,7 +12,7 @@ public class Main {
 
         remoteObj.pressButton();
         remoteObj.undo();
-         
+
 
     }
 
