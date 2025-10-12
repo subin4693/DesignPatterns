@@ -1,4 +1,4 @@
-package StructuralDesignPattern.CompositeDesignPattern;
+package StructuralDesignPattern.CompositePattern;
 
 public class File implements FileSystem {
     String fileName;

@@ -1,4 +1,4 @@
-package StructuralDesignPattern.AdapterDesignPattern;
+package StructuralDesignPattern.AdapterPattern;
 
 public class DataAnalyticsTool {
     String jsonData;

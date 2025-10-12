@@ -1,4 +1,4 @@
-package StructuralDesignPattern.CompositeDesignPattern;
+package StructuralDesignPattern.CompositePattern;
 
 public class Main {
     public static void main(String[] args) {
