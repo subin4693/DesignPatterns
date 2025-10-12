@@ -5,17 +5,16 @@ import java.util.ArrayList;
 public class Playlist {
     ArrayList<String> songs;
 
-
-    public Playlist(){
+    public Playlist() {
         songs = new ArrayList<>();
     }
 
-    public void addSong(String song){
+    public void addSong(String song) {
         songs.add(song);
     }
 
-    public PlaylistIterator iterator(String type){
-        switch(type){
+    public PlaylistIterator iterator(String type) {
+        switch (type) {
             case "simple":
                 return new SimplePlaylistIterator(this);
             case "shuffled":
@@ -25,9 +24,7 @@ public class Playlist {
         }
     }
 
-
-
-    public ArrayList getSongs(){
+    public ArrayList<String> getSongs() {
         return songs;
     }
 }

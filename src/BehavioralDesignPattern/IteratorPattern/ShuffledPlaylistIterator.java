@@ -3,14 +3,13 @@ package BehavioralDesignPattern.IteratorPattern;
 import java.util.ArrayList;
 import java.util.Collections;
 
-public class ShuffledPlaylistIterator implements  PlaylistIterator {
-    private Playlist playlist;
+public class ShuffledPlaylistIterator implements PlaylistIterator {
+
     private int index;
     private ArrayList<String> shuffledSongs;
 
+    public ShuffledPlaylistIterator(Playlist playlist) {
 
-    public ShuffledPlaylistIterator(Playlist playlist){
-        this.playlist = playlist;
         this.shuffledSongs = new ArrayList<>(playlist.getSongs());
         Collections.shuffle(shuffledSongs);
         this.index = 0;
@@ -18,12 +17,12 @@ public class ShuffledPlaylistIterator implements  PlaylistIterator {
     }
 
     @Override
-    public boolean hasNext(){
+    public boolean hasNext() {
         return index < shuffledSongs.size();
     }
 
     @Override
-    public String next(){
+    public String next() {
         return shuffledSongs.get(index++);
     }
 
